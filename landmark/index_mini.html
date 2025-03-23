@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Swamp Creature Quiz</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: #053219; /* Dark swamp green */
+            color: #c9e4a7; /* Light green text */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #0e5c2f; /* Swamp green */
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .start-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #6b9e4f; /* Mossy green */
+            color: #f1ffc4; /* Light text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .start-button:hover {
+            background-color: #547d3d; /* Darker on hover */
+        }
+
+        #game-container {
+            display: none;
+        }
+
+        #story-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        #choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .choice-button {
+            font-size: 16px;
+            padding: 10px 15px;
+            background-color: #5e8c40; /* Swamp green */
+            color: #e8ffc1; /* Light text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .choice-button:hover {
+            background-color: #4c7336; /* Darker on hover */
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #8cc269;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Quick Swamp Creature Quiz</div>
+        <p>Discover your swamp creature identity in just 3 questions!</p>
+        <button class="start-button" onclick="startGame()">Take the Quiz</button>
+        
+        <div id="game-container">
+            <div id="story-text"></div>
+            <div id="choices"></div>
+        </div>
+
+        <div class="footer">
+            <p>Want a more immersive experience? <a href="index.html">Try the full adventure!</a></p>
+        </div>
+    </div>
+    
+    <script src="miniGame.js"></script>
+</body>
+</html>
