@@ -198,7 +198,7 @@ const gameData = {
         "choices": {
             "Ask them if they have lattes": [18, ["Professional Tiny", "Megamind Tiny", "Polite Tiny"]],
             "Order a hot chocolate": [18, ["Excited Tiny", "Shocked Tiny", "I've Lost It Tiny"]],
-            "Ask if they have a pot of earl grey tea": [18, ["iPad Kid Tiny", "Ghost Tiny"]],
+            "Order a pot of earl grey tea": [18, ["iPad Kid Tiny", "Ghost Tiny"]],
             "Take a quick power nap": [18, ["Tired Tiny", "Side Eye Tiny"]]
         }
     },
